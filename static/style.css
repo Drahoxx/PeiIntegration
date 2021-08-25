@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+	background-color: #2C2F33;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+.drahoxx-button-about{
+	background-color: #2C2F33;
+	color: #99AA85;
+}
+
+.uk-placeholder{
+	background-color: #2C2F33;
+	color: #F6F6F6;
+}

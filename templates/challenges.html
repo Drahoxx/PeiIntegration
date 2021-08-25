@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Challenges</h1>
+
+<div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+    {% for c in challenges %}	
+	    <a href="{{c.id}}" class="uk-text-decoration-none">
+	        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+	            <h3 class="uk-card-title">{{c.title}}</h3>
+	            <p>{{c.desc}}</p>
+	            <span class="uk-text-bolder uk-text-large card-points" style="color: #23272A;">{{c.points}}</span>
+	        </div>
+	    </a>
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}
