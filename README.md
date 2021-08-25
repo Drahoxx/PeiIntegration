@@ -6,7 +6,7 @@ Pages :
 - Log-in (by team)
 - Top 3 teams
 - Latest challenge picture
-> About (/about)
+> About (/about) --> ✓
 - Simple explaination of the challenge
 - Credits
 > Latest (/latest)
@@ -22,4 +22,4 @@ Pages :
   >Every single challenges (/challenge/challid)
   - Desc + points of the challenge
   - Which team passed the challenge
-  > Challenge x Team (Refer to Leaderboard/teamname/challid)
+  > Challenge x Team (Refer to /leaderboard/teamname/challid)
