@@ -1,7 +1,7 @@
 # PeiIntegration
 Site web pour l'intégration des 1ère années en PEi à l'ENSIBS
 
-Pages : 
+<h2>Pages :</h2> 
 > Index (/)
 - Log-in (by team)
 - Top 3 teams
@@ -23,3 +23,19 @@ Pages :
   - Desc + points of the challenge
   - Which team passed the challenge
   > Challenge x Team (Refer to /leaderboard/teamname/challid)
+
+
+<h2>Project specs :</h2>
+- Flask (backend) 
+  - https://flask.palletsprojects.com/en/2.0.x/
+  - https://youtu.be/zRwy8gtgJ1A 
+- UIkit (css framework)
+  - https://getuikit.com/docs/introduction
+- idk yet (database)
+  - MySQL ? TinyDB ?
+
+<h2>TODO misc :</h2>
+- Create challenges (with points)
+- Create teams
+
+<mark>Deadline : 01/09/2021 10h</mark>
