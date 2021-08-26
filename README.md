@@ -45,6 +45,12 @@ Site web pour l'intégration des 1ère années en PEi à l'ENSIBS
     </ul>
   </li>
 </ul>
+<h3>Admin</h3>
+<ul>
+  <li>
+    Validate challenges (pictures)
+  </li>
+</ul>
 
 <h2>Project specs :</h2>
 <h3>Flask (backend)</h3>
