@@ -2,7 +2,33 @@
 
 {% block body %}
 
-<h1>{{id}}</h1>
+<h1>{{c.title}}</h1>
+<h2>{{c.desc}}</h2>
+<h2>{{c.points}}</h2>
 
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1>Déposez vos preuves</h1>
+      <hr>
+
+      <form action="/challenges/{{c.id}}" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <label>Sélectionnez votre image</label>
+          <div class="custom-file">
+            <input type="file" name="image" id="image">
+            <label class="custom-file-label" for="image">Select image...</label>
+          </div>
+        </div>
+
+        <button type="submit" class="uk-button uk-button-default">Upload</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
 
 {% endblock %}
