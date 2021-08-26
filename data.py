@@ -12,5 +12,11 @@ def Challenges():
 			'desc':'Vous devez sauter dans la marre devant l\'ENSIBS. Une photo est demandée comme preuve de vérification',
 			'points':200
 		},
+		{
+			'id':3,
+			'title':'Nage a la plage à minuit',
+			'desc':'Vous devez nager à la plage dans les alentours de minuit (bain de minuit). Une photo est demandée comme preuve de vérification',
+			'points':100
+		}
 	]
 	return challenges
