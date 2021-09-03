@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <h1>VALIDATION DES CHALLENGES</h1>
+  <h2>From : {{ teamname }}</h2>
+  <h2>Challenge : {{challenge}}</h2>
+  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+  {% for f in base64Images %}
+    <div class="">
+      <img class="uk-thumbnail" src="{{f}}">
+    </div>
+  {% endfor %}
+  </div>
+  <form method ="post" action="">
+    <button type="submit" name="y" value="y" class="uk-button uk-button-default">Valider</button>
+    <button type="submit" name="n" value="n" class="uk-button uk-button-default">Non je valide pas</button>
+  </form>
+{% endblock %}

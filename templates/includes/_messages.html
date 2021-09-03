@@ -1,0 +1,24 @@
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="uk-alert-{{ category }}" uk-alert>
+      	<a class="uk-alert-close" uk-close style="color:black;"></a>
+      	<p>{{ message }}</p>
+  	  </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+{% if error %}
+  <div class="uk-alert-danger" uk-alert>
+  	<a class="uk-alert-close" uk-close style="color:black;"></a>
+  	<p>{{error}}</p>
+  </div>
+{% endif %}
+
+{% if msg %}
+  <div class="uk-alert-success" uk-alert>
+  	<a class="uk-alert-close" uk-close style="color:black;"></a>
+  	<p>{{msg}}</p>
+  </div>
+{% endif %}

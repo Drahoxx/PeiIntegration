@@ -1,12 +1,12 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <h1>HOME</h1>
-  <h2><a href="/register">Register</a> OR LOGIN :</h2>
+  <h1>TEAMS</h1>
+  <h2>JOIN A TEAM :</h2>
   <form action="" method="POST">
     <div class="form-group">
-      <label>Username</label>
-      <input type="text" name="username" class="uk-input" value={{request.form.username}}>
+      <label>Team Name</label>
+      <input type="text" name="teamname" class="uk-input" value={{request.form.teamname}}>
     </div>
     <div class="form-group">
       <label>Password</label>
@@ -14,4 +14,9 @@
     </div>
     <button type="submit" class="uk-button uk-button-default">Submit</button>
   </form>
+  <ul class="uk-list uk-list-striped">
+  {% for t in teams %}
+    <li>{{t[0]}}</li>
+  {% endfor %}
+  </ul>
 {% endblock %}

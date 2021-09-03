@@ -5,12 +5,23 @@
   <title>PEI CHALLENGES</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.2/css/uikit-core.min.css">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" />
 
 </head>
 <body>
-
+  
+    
   {% include 'includes/_navbar.html' %}
+  <div class="uk-align-right">
+    {% if 'username' in session %}
+      <div class="uk-margin-remove uk-margin-right"><span style="color:whitesmoke;">Username : {{session.username}}</span></div>
+    {% endif %}
+    {% if 'team' in session %}
+      <div class="uk-margin-remove uk-margin-right"><span style="color:whitesmoke;">Team : {{session.team}}</span></div>
+    {% endif %}
+  </div>
   <div class="uk-light uk-background-secondary uk-placeholder uk-text-center uk-padding">
+    {% include 'includes/_messages.html' %}
     {% block body %}{% endblock %}
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.2/js/uikit-core.min.js"></script>

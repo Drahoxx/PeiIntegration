@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Bonjour {{session.username}}</h1>
+  {% if session['team'] != 'None' %}
+    <h2>Vous êtes dans l'équipe {{session.team}}</h2>
+  {% else %}
+    <h2>Vous n'êtes dans aucune équipe. Pour en rejoindre une aller dans /teams</h2>
+  {% endif %}
+  <button class="uk-button uk-button-default" onclick="window.location.href='/logout/'">Se déconnecter</button>
+{% endblock %}

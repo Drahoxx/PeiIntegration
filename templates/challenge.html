@@ -2,9 +2,9 @@
 
 {% block body %}
 
-<h1>{{c.title}}</h1>
-<h2>{{c.desc}}</h2>
-<h2>{{c.points}}</h2>
+<h1>{{c[1]}}</h1>
+<h2>{{c[2]}}</h2>
+<h2>{{c[3]}}</h2>
 
 <div class="container">
   <div class="row">
@@ -17,16 +17,20 @@
 
         <div class="form-group">
           <label>Sélectionnez votre image</label>
-          <div class="custom-file">
+          <div uk-form-custom="target: true">
             <input type="file" name="image" id="image">
-            <label class="custom-file-label" for="image">Select image...</label>
+            <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
           </div>
         </div>
 
         <button type="submit" class="uk-button uk-button-default">Upload</button>
 
       </form>
-
+      <ul class="uk-list uk-list-striped">
+        {% for t in teams %}
+        <li>{{t[0]}} : {{t[1]}}</li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </div>

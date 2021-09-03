@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <h1>CLASSEMENT</h1>
+  <ul class="uk-list uk-list-striped">
+  {% for t in teams %}
+    <li>{{t[0]}} : {{t[1]}}</li>
+  {% endfor %}
+  </ul>
+{% endblock %}
